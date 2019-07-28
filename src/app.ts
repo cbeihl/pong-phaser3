@@ -1,7 +1,7 @@
 import "phaser";
 import { TitleScene } from "./titleScene";
 
-const config: GameConfig = {
+const config: Phaser.Types.Core.GameConfig = {
   title: "Pong",
   width: 1280,
   height: 720,
@@ -17,7 +17,7 @@ const config: GameConfig = {
 };
 
 export class PongGame extends Phaser.Game {
-  constructor(config: GameConfig) {
+  constructor(config: Phaser.Types.Core.GameConfig) {
     super(config);
   }
 };
