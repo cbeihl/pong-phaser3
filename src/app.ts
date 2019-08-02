@@ -1,12 +1,13 @@
 import "phaser";
 import { TitleScene } from "./titleScene";
+import {GameScene} from "./gameScene";
 
 const config: Phaser.Types.Core.GameConfig = {
   title: "Pong",
   width: 1280,
   height: 720,
   parent: "game",
-  scene: [TitleScene],
+  scene: [TitleScene, GameScene],
   physics: {
     default: "arcade",
     arcade: {
